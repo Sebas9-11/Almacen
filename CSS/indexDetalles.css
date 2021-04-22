@@ -1,0 +1,103 @@
+body{
+    font-family: Helvetica ; /*tipo de letra */
+    font-weight: bold;/* texto en negrita*/
+    margin: 0;
+    padding-top: 30px;
+    /* Aquí el origen de la imagen */
+                background-image: url(Imagenes/campus_unilibre.jpg);
+
+                  /* Fijar la imagen de fondo este vertical y
+                    horizontalmente y centrado */
+                background-position: center center;
+
+                  /* Esta imagen no debe de repetirse */
+                background-repeat: no-repeat;
+
+                  /* COn esta regla fijamos la imagen en la pantalla. */
+                background-attachment: fixed;
+
+                  /* La imagen ocupa el 100% y se reescala */
+                background-size: cover;
+}
+
+header{
+    width: 100%;
+    height: 85px;
+}
+
+.ancho{
+    width: 93%;
+    height: 85px;
+    margin-left: 60px;
+    /*background: green;*/
+}
+
+.escudo{
+    float: left;
+    /*background: yellow;*/
+    height: 85px;
+}
+
+.m_p{
+    float: left;
+    /*background: blue;*/
+    height: 85px;
+}
+
+.m_s{
+    float: right;
+    /*background: pink;*/
+    height: 85px;
+}
+
+.menu_p , .menu_s{
+    list-style: none;
+   /* padding:0.25px; /* relleno del menu */*/
+    background :#B90E06;
+    max-height: 1000px;
+    margin-top: 35px;
+    margin-left: 80px;
+    border-radius: 10px;
+}
+
+.menu_p li a, .menu_s li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+    background: #B90E06;
+    border-radius:7px;
+}
+
+.menu_p li, .menu_s li{
+    display: inline-block; /* colcar las listas una al lado de otra */
+    text-align: center; /* texto al centro */
+}
+
+/*cambiar de color al pasar el mouse */
+.menu_p li a:hover, .menu_s li a:hover{
+    background: #FC0F04;
+    border-radius: 10px;
+}
+
+/* configurar la diapositiva o el paso de imagenes */
+.slider {
+    width: 1370px;
+    height: 400px;
+    background: url(imagenes/negocios.jpg); /*primera imagen */
+    margin: 50px auto;
+    margin-top: 2%;
+    border-radius: 5px; /*bordes del slider*/
+    animation: cambio 20s infinite; /* tiempo de cambio de imagen */
+}
+
+/*metodo para mostrar las imagenes, dividir el porcentaje
+en el numero de imagenes */
+@keyframes cambio{
+    25%{background: url(imagenes/ambiental.jpg);}
+    50%{background: url(imagenes/ingenierias1.jpeg);}
+    75%{background: url(imagenes/ingenierias2.jpeg);}
+    100%{background: url(imagenes/negocios.jpg);}
+}
+
+

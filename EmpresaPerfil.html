@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfil Empresa</title>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="CSS/EmpresaPerfilDetalles.css">
+</head>
+<body>
+    <section class="seccion-perfil-usuario">
+        <div class="perfil-usuario-header">
+            <div class="perfil-usuario-portada">
+
+                <nav class="m-i">
+                    <ul class="menu-inicio">
+                        <li><a href="#">Inicio</a></li>
+                    </ul>
+                </nav>
+
+                <div class="ancho">
+                    <!-- menu principal -->
+                    <nav class="m_p">
+                        <ul class="menu_p">
+                            <li>
+                                <a href="#">
+                                    <img src="imagenes/campana_notificaciones.png" alt="Imagen de notificaciones no cargada">
+                                </a>
+                                <ul class="submenu_notificaciones">
+                                    <li>
+                                        <a>
+                                            Notificaciones
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="imagenes/globo_mensajes.png" alt="Imagen de mensajes no cargada">
+                                </a>
+                                <ul class="submenu_mensajes">
+                                    <li>
+                                        <a>
+                                            Mensajes
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Nombre de la Empresa
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="imagenes/maletinTrabajo.jpg" alt="Imagen de la empresa no cargada" class="imagen_estudiante">
+                                </a>
+                                <ul class="submenu_perfil">
+                                    <li>
+                                        <a  href="inicio_sesion.html">
+                                            Cerrar sesión
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="perfil-usuario-avatar">
+                    <img src="imagenes/maletinTrabajo.jpg" alt="img-avatar">
+                </div>
+            </div>
+        </div>
+
+        <div class="perfil-usuario-body">
+            <div class="perfil-usuario-bio">
+                <a href="edicionPEmp.html"><input class="botonOf" type="submit" name="Nueva_Oferta" value="Crear Nueva Oferta"></a>
+                <h3 class="titulo">Asociacion De Ingenieros</h3>
+                <p class="texto">descripcion de la empresa </p>
+            </div>
+            <div class="perfil-usuario-footer">
+                <ul class="lista-datos">
+                    <li><i class="icono fas fa-map-marker-alt"></i> Ubicacion:</li>
+                    <li><i class="icono fas fa-map-signs"></i> Direccion:</li>
+                    <li><i class="icono fas fa-phone-alt"></i> Telefono:</li>
+                </ul>
+                <div class="secciones-perfil"  style = "float: left">
+                    <h1>Empleos Activos</h1>
+                    <hr>
+                    <div class="seccion1">
+                        <h3>Ingeniero fullstack</h3>
+                        <input class="botones" type="submit" name="editar" value="editar Empleo">
+                        <input class="botones" type="submit" name="postularse_empleo" value="Ver Postulados">
+                        <input class="botones" type="submit" name="Guardar" value="Eliminar">
+                    </div>
+                    <div class="seccion2">
+                        <h3>Ingeniero Back-End</h3>
+                        <input class="botones" type="submit" name="editar" value="editar Empleo">
+                        <input class="botones" type="submit" name="postularse_empleo" value="Ver Postulados">
+                        <input class="botones" type="submit" name="Guardar" value="Eliminar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+
+.seccion-recomendaciones{
+    background: gray;
+    border: 1px solid black;
+    border-radius: 5px;
+    height:auto;
+    width:700px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+.seccion-recomendaciones h1{
+    text-align: center;
+}
+
+.añadir-recomendacion {
+    background: #fff;
+    height: 220px;
+    width:400px;
+    margin: auto;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-left: 25px;
+    margin-bottom:25px;
+}
+/*centrar textarea*/
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.boton{
+
+}
+
+.recomendaciones-realizadas{
+    margin-top:15px;
+    background: red;
+    padding-left: 50px;
+    width: auto;
+    height: auto;
+    margin-right: 50px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    border: 1px solid black;
+}
+
+.recomendaciones-realizadas h2{
+    padding-top: 25px;
+    text-align: center;
+}
+.recomendacion {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: white;
+    height:180px;
+    width: 550px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+
+
+}
+.recomendacion img{
+    height:65px;
+    width:65px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+.nombre {
+    padding-left: 15px;
+    background: white;
+    height:100px;
+    width: 480px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.nombre h6{
+    font-size:14px;
+    float:left;
+    margin-bottom:5px;
+    margin-top:5px;
+}
+
+.nombre p{
+    font-size:12px;
+    float:right;
+    margin-top:2px;
+}

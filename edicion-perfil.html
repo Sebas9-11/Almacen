@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil del Egresado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="CSS/edicion-perfilDetalles.css">
+</head>
+<body>
+    <header>
+        <div class="ancho">
+            <div class="escudo">
+                <a target="_blank" href="http://www.unilibrebaq.edu.co/unilibrebaq/">
+                    <img src="imagenes/escudolibre.png" alt="Imagen de escudo UL no cargada">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="seccion_edicion_perfil_usuario">
+        <div class="edicion_perfil_usuario_header">
+            <div class="edicion_perfil_usuario_portada">
+                <div class="seccion_edicion_perfil_imagen">
+                    <div class="imagen_perfil">
+                        <img src="imagenes/perfil_pasante.jpg" width="230" height="200"
+                        alt="Imagen de estudiante no cargada">
+                        <button type="button" class="boton_edicion_imagen">
+                            <i class="far fa-image"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="edicion_perfil_usuario_body">
+            <div class="edicion_informacion_perfil_usuario">
+                <div class="edicion_nombre_usuario">
+                    <input type="text" class="nombre_usuario" placeholder="Estudiante Egresado">
+                </div>
+
+                <div class="edicion_especificaciones_usuario">
+                    <a>
+                        <h2>Dirección: </h2>
+                    </a>
+                    <input type="text" name="" id="" placeholder="Ingrese su dirección">
+
+                    <br><br>
+
+
+
+                    <a>
+                        <h2>Profesión: </h2>
+                    </a>
+                    <select class="edicion_seleccion_carrera">
+                        <option>--Seleccione su Carrera--</option>
+                        <option>Ing. de Sistemas</option>
+                        <option>Ing. industrial</option>
+                    </select>
+    
+                    <br><br>
+            
+                    <a>
+                        <h2>Descripción: </h2>
+                    </a>
+                    <textarea rows="6" cols="60" class="edicion_descripcion"></textarea>
+    
+                    <br><br>
+                    
+                    <div class="contenedor_conocimientos">
+                        <a>
+                            <h2>Conocimientos:</h2>
+                        </a>
+                        <br>
+                        <div class="opciones_conocimientos">
+                            <input type="checkbox" id="chk1">
+                            <label for="chk1">C#</label>
+                        </div>
+                        
+                        <div class="opciones_conocimientos">
+                            <input type="checkbox" id="chk2">
+                            <label for="chk2">MYSQL</label>
+                        </div>
+                        
+                        <div class="opciones_conocimientos">
+                            <input type="checkbox" id="chk3">
+                            <label for="chk3">JavaScript</label>
+                        </div>
+            
+                        <div class="opciones_conocimientos">
+                            <input type="checkbox" id="chk4">
+                            <label for="chk4">PHP</label>
+                        </div>
+                    </div>
+            
+                    <br><br>
+            
+                    <div class="contenedor_habilidades">
+                        <a>
+                            <h2>Habilidades:</h2>
+                        </a>
+                        <br>
+                        <div class="opciones_habilidades">
+                            <input type="checkbox" id="chk5">
+                            <label for="chk5">Liderazgo</label>
+                        </div>
+                        
+                        <div class="opciones_habilidades">
+                            <input type="checkbox" id="chk6">
+                            <label for="chk6">Responsabilidad</label>
+                        </div>
+                        
+                        <div class="opciones_habilidades">
+                            <input type="checkbox" id="chk7">
+                            <label for="chk7">Compañerismo</label>
+                        </div>
+            
+                        <div class="opciones_habilidades">
+                            <input type="checkbox" id="chk8">
+                            <label for="chk8">Puntualidad</label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <input type="button" value="Guardar">
+        </div>
+    </section>
+
+
+
+    
+    
+    
+    
+    <!-- <h1>LLENA TUS DATOS</h1>
+    <h3>favor rellena todos los Campos a Continuación</h3>
+    <hr>
+    <h1>Espera Nuestra Confirmacion</h1>
+    <div>
+    <form>
+        <h3>NOMBRE</h3>
+        <input type="text" name="" id="">
+        <br>
+        <br>
+        <label>APELLIDOS</label>
+        <input type="text" name="" id="" placeholder="Ingrese sus apellidos">
+        <br><br>
+        <label>Cuales son tus gustos?</label>
+        <br><br>
+        <input type="checkbox" name="chk1">Musica
+        <input type="checkbox" name="chk2">Ver TV
+        <input type="checkbox" name="chk3">Internet
+        <input type="checkbox" name="chk4">Ejercicios
+        <br><br>
+        Su Sexo
+        <br><br>
+        <input type="radio" name="opt1">Hombre<br>
+        <input type="radio" name="opt1">Mujer<br>
+        <input type="radio" name="opt1">Otro<br>
+        <br><br>
+        <label>
+            De que Ciudad es ?
+        </label><br><br>
+        <select>
+            <option>--Selecciones su ciudad de origen--</option>
+            <option>Barranquilla</option>
+            <option>Cali</option>
+            <option>Bogota</option>
+            <option>Medellin</option>
+        </select>
+        <br><br>
+        <label>Fecha de Nacimiento</label>
+        <br><br>
+        <input type="date">
+        <br><br>
+        <label>Subir su Foto</label>
+        <br><br>
+        <input type="file">
+        <br><br>
+        <label>Donde nos conocio?</label><br><br>
+        <textarea rows="5" cols="50"></textarea>
+        <br><br>
+        <input type="button" value="Registrar">
+        <input type="reset" value="Nuevo">
+    </form>
+-->
+</div>
+    
+</body>
+</html>

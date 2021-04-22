@@ -1,0 +1,129 @@
+body{
+    font-family: Helvetica ; /*tipo de letra */
+    font-weight: bold;/* texto en negrita*/
+    margin: 0;
+    padding-top: 30px;
+     /* Aquí el origen de la imagen */
+            background-image: url(Imagenes/campus_unilibre.jpg);
+
+              /* Fijar la imagen de fondo este vertical y
+                horizontalmente y centrado */
+            background-position: center center;
+
+              /* Esta imagen no debe de repetirse */
+            background-repeat: no-repeat;
+
+              /* COn esta regla fijamos la imagen en la pantalla. */
+            background-attachment: fixed;
+
+              /* La imagen ocupa el 100% y se reescala */
+            background-size: cover;
+}
+
+/*.contenedor_fondo{
+    margin: auto;
+    width: 850px;
+    height: 450px;
+    border-radius: 5px;
+    position: center;
+    line-height: 1.8;
+    padding: 5px;
+    background: #E59C9C;
+    padding-bottom: 10px;
+
+}*/
+
+.container{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 1px
+}
+
+.lbl-menu{
+    background: #B90E06;
+    border-radius:5px;
+}
+
+.lbl-menu label{
+    display: inline-block;
+    padding: 20px;
+    color : white;
+    cursor: pointer;
+    transition: all 400ms ease;
+    border-radius: 5px;
+
+}
+.lbl-menu label:hover{
+    background: #FC0F04;
+}
+
+.content{
+    position: relative;
+}
+
+.content div{
+    border-radius: 5px;
+    position: absolute;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 30px;
+    background: #fff;
+    padding-bottom: 40px;
+}
+
+#radio1, #radio2, #radio3, #radio4{
+    display:none;
+}
+
+#radio1:checked ~ .tab1{
+    opacity:1;
+    visibility: visible;
+    transform: scale(1)
+}
+
+#radio2:checked ~ .tab2{
+    opacity:1;
+    visibility: visible;
+    transform: scale(1)
+}
+
+#radio3:checked ~ .tab3{
+    opacity:1;
+    visibility: visible;
+    transform: scale(1)
+}
+
+#radio4:checked ~ .tab4{
+    opacity:1;
+    visibility: visible;
+    transform: scale(1)
+}
+/*dibujar triangulo parasaber en que pestaña esta */
+.content div:after{
+    position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    bottom:100%;
+    left: 55px;
+}
+
+.content .tab2:after{
+    left:190px;
+}
+
+.content .tab3:after{
+    left:360px;
+}
+
+.content .tab4:after{
+    left:530px;
+}
+
